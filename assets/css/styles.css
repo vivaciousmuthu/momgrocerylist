@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #c8e6c9;
+}
+.banner {
+    background: url("../img/mgbanner.jpeg") no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px) {
+    .banner {
+        height: 70vh; /* Adjust for smaller screens */
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .banner {
+        height: 50vh; /* Adjust for very small screens */
+        font-size: 16px;
+    }
+}
+.section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.about h2, .playstore h2, .releases h2, .thanksnotes h2 {
+    color: #4caf50;
+}
+.playstore {
+    background-color: #e8f5e9;
+}
+.releases {
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #8736d8, #CF9FFF);
+    color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+footer p {
+    margin: 0;
+}
+a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #388e3c;
+}

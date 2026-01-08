@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom Grocery List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #scrollToTop:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/mglogo3.png" alt="mom grocery list logo" height="40" class="me-2">
+                <span>Mom Grocery List</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About MG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#playstore">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#releases">Releases</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h4>Welcome to MGList</h4>
+    </div>
+
+    <div id="about" class="section about">
+        <h2>About MGList</h2>
+        <hr/>
+        <h3>Tired of messy paper lists and forgotten items?</h3>
+        <p><b>MGList</b> (Mom's Grocery List) is here to help! We make creating and sharing your shopping list simple, fast, and digital, saving you valuable time. Inspired by a mother's care, our goal is to help you shop smarter for your health and the planet.</p>
+        <h3>Why You'll Love MGList:</h3>
+        <ul>
+            <li><b>Build Lists Fast:</b> Quickly select your groceries and prepare your list in seconds, not minutes.</li>
+            <li><b>Share with Anyone:</b> Instantly send your completed list to your family, friends, or even your local grocery store using WhatsApp, Gmail, Notes, and more.</li>
+            <li><b>Never Forget Again:</b> Did your mom call with a list while you were busy? She can use MGList to build the list and send it directly to you. No more forgetting items after a workout, a drive, or a long day at work!</li>
+            <li><b>Perfect for Offline Shoppers:</b> Love the experience of shopping in a store? Ditch the crumpled paper and carry your list cleanly on your phone.</li>
+            <li><b>Shop with Purpose:</b> A well-planned list helps you buy exactly what you need, promoting wellness and reducing food waste to help our climate.</li>
+        </ul>
+
+        <h3>Meet Your AI Assistants</h3>
+        <hr/>
+        <p>We've packed powerful <b>AI</b> features into MGList to make your life even easier:</p>
+
+        <h3>Introducing: Grocery Lens (Pilot Feature)</h3>
+        <hr/>
+        <ul>
+            <li><b>Your Culinary Companion:</b> Have a question about a recipe? Need to know what to cook with the items on your list? Just ask our friendly chatbot! It's your go-to source for food and cooking information. (<b>Please note:</b> Our chatbot is always learning and can sometimes make mistakes. Please double-check critical information.)</li>
+            <li><b>Grocery Lens (Pilot Feature):</b> Use your phone's camera to take a picture of a handwritten grocery list. Grocery Lens will automatically read the items and add them to your shopping screen. It's the perfect bridge between your old paper notes and your new digital list.</li>
+        </ul>
+
+        <p>We are passionate about making your life easier. Please try MGList and let us know your valuable feedback as we continue to improve the app for you.</p>
+
+        <h5>Happy Shopping!</h5>
+    </div>
+
+    <div id="playstore" class="section playstore">
+        <h2>Download MGList App</h2>
+        <hr/>
+        <p>Please use this MGList app and share your experience:</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.gb.momgrocerylist" target="_blank">Click here to Download from Play Store</a></p>
+        <p>We would like to hear your feedback after using this app!</p>
+    </div>
+
+    <div id="thanksnotes" class="section thanksnotes">
+        <h2>A Heartfelt Thank You</h2>
+        <hr/>
+        <p>This journey would not have been possible without the <b>support of a wonderful community.</b></p>
+        <p>A special thanks to our <b>AI collaborator</b>, the <b>Android Studio Gemini Preview</b>, for its remarkable support and guidance, which helped accelerate development and overcome complex challenges.</p>
+        <p>We are immensely grateful to our dedicated group of <b>alpha testers</b>. Thank you, <b>Sankar, Mohan, Sathya, Rajamathi, Padma, Maniprakash, Hasan, Sasi, Vivek, Arul, Devaraj, Kosal, Rithul, Vijay babu, Vijay kumar, Pushpalatha & Guna</b>. Your insightful feedback and constant encouragement were instrumental in refining the app and preparing it for launch.</p>
+        <p>Finally, a personal and heartfelt thanks to <b>Hemamalini</b> ma'am for the stunning banner art that welcomes you to the app. I simply shared a concept, and she transformed it into a beautiful piece of artwork that perfectly captures the spirit of our project.</p>
+        <p>This app is a testament to the power of community and collaboration. Thank you all for being a part of it.</p>
+    </div>
+
+    <div id="releases" class="section releases">
+        <h2>Release Wise Information</h2>
+        <hr/>
+        <p><strong>Current Release V1.2 - Features</strong></p>
+        <ul>
+            
+            <li>Build Grocery list and Add to cart</li>
+            <li>Share lists with family and friends</li>
+            <li>Chat with our AI assistant for your food and nutrition needs </li>
+            <li>Wellness information</li>
+            <li><b>Known issue / Not in Scope: </b></li>
+            <ul>
+            <li>Favroite Screen is not enabled in this release</li>
+            <li>Lens Feature:- OCR image-to-text conversion is not accurate in this release.</li>
+            </ul>
+        </ul>
+        <!--<a href="releases.html">More info</a> -->
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        Thank you for your valuable time to visiting MGList. <br/>&copy; 2026 MGList, All rights reserved.
+    </footer>
+
+    <button id="scrollToTop" title="Go to top">&uarr;</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scrollToTopButton = document.getElementById("scrollToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        });
+
+        scrollToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
