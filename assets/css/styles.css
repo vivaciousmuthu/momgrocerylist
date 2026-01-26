@@ -14,6 +14,15 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: white;
 }
+header.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 header .logo {
     display: flex;
     align-items: center;
@@ -34,19 +43,28 @@ header nav a:hover {
 }
 .banner {
     background: url("../img/mgbanner.jpeg") no-repeat center center/cover;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     color: white;
-    font-size: 28px;
-    font-weight: bold;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 56px;
 }
 @media (max-width: 768px) {
     .banner {
         height: 70vh; /* Adjust for smaller screens */
         font-size: 20px;
+    }
+}
+@media (max-width: 767.98px) {
+    .banner {
+        margin-top: 56px;
+        min-height: 60vh;
+        padding: 20px;
     }
 }
 @media (max-width: 480px) {
@@ -89,4 +107,34 @@ a {
 }
 a:hover {
     color: #388e3c;
+}
+.navbar-nav .nav-link {
+    position: relative;
+    color: #333;
+    padding-bottom: 8px;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:focus::after,
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
 }
