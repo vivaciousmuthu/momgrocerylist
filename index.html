@@ -5,31 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mom Grocery List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <style>
-        #scrollToTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: none;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 24px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            z-index: 1000;
-        }
-        #scrollToTop:hover {
-            background-color: #388e3c;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="assets/img/mglogo3.png" alt="mom grocery list logo" height="40" class="me-2">
@@ -61,73 +42,93 @@
     </header>
 
     <div class="banner">
-        <h4>Welcome to MGList</h4>
+        <div>
+            <h1>Wanna prepare grocery list?</h1>
+            <a href="https://play.google.com/store/apps/details?id=com.gb.momgrocerylist" target="_blank" class="btn btn-primary mt-3">Download Now</a>
+        </div>
     </div>
 
-    <div id="about" class="section about">
-        <h2>About MGList</h2>
+    <div id="about" class="section about bg-white rounded-4 shadow-sm p-4 mb-5 animate__animated animate__fadeIn">
+        <h2 class="text-success mb-3"><i class="bi bi-info-circle-fill me-2"></i>About MGList</h2>
         <hr/>
-        <h3>Tired of messy paper lists and forgotten items?</h3>
-        <p><b>MGList</b> (Mom's Grocery List) is here to help! We make creating and sharing your shopping list simple, fast, and digital, saving you valuable time. Inspired by a mother's care, our goal is to help you shop smarter for your health and the planet.</p>
-        <h3>Why You'll Love MGList:</h3>
-        <ul>
-            <li><b>Build Lists Fast:</b> Quickly select your groceries and prepare your list in seconds, not minutes.</li>
-            <li><b>Share with Anyone:</b> Instantly send your completed list to your family, friends, or even your local grocery store using WhatsApp, Gmail, Notes, and more.</li>
-            <li><b>Never Forget Again:</b> Did your mom call with a list while you were busy? She can use MGList to build the list and send it directly to you. No more forgetting items after a workout, a drive, or a long day at work!</li>
-            <li><b>Perfect for Offline Shoppers:</b> Love the experience of shopping in a store? Ditch the crumpled paper and carry your list cleanly on your phone.</li>
-            <li><b>Shop with Purpose:</b> A well-planned list helps you buy exactly what you need, promoting wellness and reducing food waste to help our climate.</li>
+        <h3 class="fw-bold">Tired of messy paper lists and forgotten items?</h3>
+        <p class="lead"><b>MGList</b> (Mom's Grocery List) is here to help! We make creating and sharing your shopping list simple, fast, and digital, saving you valuable time. Inspired by a mother's care, our goal is to help you shop smarter for your health and the planet.</p>
+        <h3 class="mt-4">Why You'll Love MGList:</h3>
+        <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><b>Build Lists Fast:</b> Quickly select your groceries and prepare your list in seconds, not minutes.</li>
+            <li class="list-group-item"><b>Share with Anyone:</b> Instantly send your completed list to your family, friends, or even your local grocery store using WhatsApp, Gmail, Notes, and more.</li>
+            <li class="list-group-item"><b>Never Forget Again:</b> Did your mom call with a list while you were busy? She can use MGList to build the list and send it directly to you. No more forgetting items after a workout, a drive, or a long day at work!</li>
+            <li class="list-group-item"><b>Perfect for Offline Shoppers:</b> Love the experience of shopping in a store? Ditch the crumpled paper and carry your list cleanly on your phone.</li>
+            <li class="list-group-item"><b>Shop with Purpose:</b> A well-planned list helps you buy exactly what you need, promoting wellness and reducing food waste to help our climate.</li>
         </ul>
-
-        <h3>Meet Your AI Assistants</h3>
-        <hr/>
-        <p>We've packed powerful <b>AI</b> features into MGList to make your life even easier:</p>
-
-        <h3>Introducing: Grocery Lens (Pilot Feature)</h3>
-        <hr/>
-        <ul>
-            <li><b>Your Culinary Companion:</b> Have a question about a recipe? Need to know what to cook with the items on your list? Just ask our friendly chatbot! It's your go-to source for food and cooking information. (<b>Please note:</b> Our chatbot is always learning and can sometimes make mistakes. Please double-check critical information.)</li>
-            <li><b>Grocery Lens (Pilot Feature):</b> Use your phone's camera to take a picture of a handwritten grocery list. Grocery Lens will automatically read the items and add them to your shopping screen. It's the perfect bridge between your old paper notes and your new digital list.</li>
-        </ul>
-
-        <p>We are passionate about making your life easier. Please try MGList and let us know your valuable feedback as we continue to improve the app for you.</p>
-
-        <h5>Happy Shopping!</h5>
+        <div class="alert alert-info mt-4" role="alert">
+            <i class="bi bi-robot me-2"></i><b>Meet Your AI Assistants</b><br>
+            We've packed powerful <b>AI</b> features into MGList to make your life even easier!
+        </div>
+        <div class="card border-success mb-3">
+            <div class="card-header bg-success text-white"><i class="bi bi-camera me-2"></i>Grocery Lens (Pilot Feature)</div>
+            <div class="card-body">
+                <ul>
+                    <li><b>Your Culinary Companion:</b> Have a question about a recipe? Need to know what to cook with the items on your list? Just ask our friendly chatbot! It's your go-to source for food and cooking information. (<b>Please note:</b> Our chatbot is always learning and can sometimes make mistakes. Please double-check critical information.)</li>
+                    <li><b>Grocery Lens (Pilot Feature):</b> Use your phone's camera to take a picture of a handwritten grocery list. Grocery Lens will automatically read the items and add them to your shopping screen. It's the perfect bridge between your old paper notes and your new digital list.</li>
+                </ul>
+            </div>
+        </div>
+        <h5 class="text-end text-success">Happy Shopping!</h5>
     </div>
 
-    <div id="playstore" class="section playstore">
-        <h2>Download MGList App</h2>
-        <hr/>
-        <p>Please use this MGList app and share your experience:</p>
-        <p><a href="https://play.google.com/store/apps/details?id=com.gb.momgrocerylist" target="_blank">Click here to Download from Play Store</a></p>
-        <p>We would like to hear your feedback after using this app!</p>
+    <div id="playstore" class="section playstore bg-light rounded-4 shadow-sm p-4 mb-5 animate__animated animate__fadeIn">
+        <div class="row align-items-center">
+            <h2 class="text-primary mb-3"><i class="bi bi-google-play me-2"></i>Download MGList App</h2>
+            
+            <div class="col-lg-6">
+                 <hr/>
+               
+                <p class="lead"><h2>Please use this MGList app and share your experience:</h2></p>
+                <a href="https://play.google.com/store/apps/details?id=com.gb.momgrocerylist" target="_blank" class="btn btn-success btn-lg mb-3"><i class="bi bi-download me-2"></i>Download from Play Store</a>
+                <p class="mb-0">We would like to hear your feedback after using this app!</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="assets/img/grocery_list.png" alt="Grocery List App Preview" class="img-fluid rounded-3 shadow-sm" style="max-height:340px;object-fit:contain;" loading="lazy">
+            </div>
+        </div>
     </div>
 
-    <div id="thanksnotes" class="section thanksnotes">
-        <h2>A Heartfelt Thank You</h2>
+    <div id="thanksnotes" class="section thanksnotes bg-white rounded-4 shadow-sm p-4 mb-5 animate__animated animate__fadeIn">
+        <h2 class="text-warning mb-3"><i class="bi bi-emoji-smile-fill me-2"></i>A Heartfelt Thank You</h2>
         <hr/>
         <p>This journey would not have been possible without the <b>support of a wonderful community.</b></p>
-        <p>A special thanks to our <b>AI collaborator</b>, the <b>Android Studio Gemini Preview</b>, for its remarkable support and guidance, which helped accelerate development and overcome complex challenges.</p>
-        <p>We are immensely grateful to our dedicated group of <b>alpha testers</b>. Thank you, <b>Sankar, Mohan, Sathya, Rajamathi, Padma, Maniprakash, Hasan, Sasi, Vivek, Arul, Devaraj, Kosal, Rithul, Vijay babu, Vijay kumar, Pushpalatha & Guna</b>. Your insightful feedback and constant encouragement were instrumental in refining the app and preparing it for launch.</p>
+        
+        <div class="alert alert-warning" role="alert">
+            
+           <p class="mb-2"><b>A special thanks to our AI collaborator, the Android Studio Gemini Preview,</b> for its remarkable support and guidance, which helped accelerate development and overcome complex challenges.</p>
+           <span class="small"><b>We are immensely grateful to our dedicated group of alpha testers. Thank you, Sankar, Mohan, Sathya, Rajamathi, Padma, Maniprakash, Hasan, Sasi, Vivek, Arul, Devaraj, Kosal, Rithul, Vijay babu, Vijay kumar, Pushpalatha & Guna</b>. Your insightful feedback and constant encouragement were instrumental in refining the app and preparing it for launch.</span>
+
+        </div>
         <p>Finally, a personal and heartfelt thanks to <b>Hemamalini</b> ma'am for the stunning banner art that welcomes you to the app. I simply shared a concept, and she transformed it into a beautiful piece of artwork that perfectly captures the spirit of our project.</p>
-        <p>This app is a testament to the power of community and collaboration. Thank you all for being a part of it.</p>
+        <p class="mb-0">This app is a testament to the power of community and collaboration. Thank you all for being a part of it.</p>
     </div>
 
-    <div id="releases" class="section releases">
-        <h2>Release Wise Information</h2>
+    <div id="releases" class="section releases bg-light rounded-4 shadow-sm p-4 mb-5 animate__animated animate__fadeIn">
+        <h2 class="text-secondary mb-3"><i class="bi bi-clipboard-data me-2"></i>Release Wise Information</h2>
         <hr/>
-        <p><strong>Current Release V1.2 - Features</strong></p>
-        <ul>
-            
-            <li>Build Grocery list and Add to cart</li>
-            <li>Share lists with family and friends</li>
-            <li>Chat with our AI assistant for your food and nutrition needs </li>
-            <li>Wellness information</li>
-            <li><b>Known issue / Not in Scope: </b></li>
-            <ul>
-            <li>Favroite Screen is not enabled in this release</li>
-            <li>Lens Feature:- OCR image-to-text conversion is not accurate in this release.</li>
-            </ul>
-        </ul>
+        <div class="card border-secondary mb-3">
+            <div class="card-header bg-secondary text-white"><i class="bi bi-stars me-2"></i>Current Release V1.2 - Features</div>
+            <div class="card-body">
+                <ul>
+                    <li>Build Grocery list and Add to cart</li>
+                    <li>Share lists with family and friends</li>
+                    <li>Chat with our AI assistant for your food and nutrition needs</li>
+                    <li>Wellness information</li>
+                    <li><b>Known issue / Not in Scope: </b>
+                        <ul>
+                            <li>Favroite Screen is not enabled in this release</li>
+                            <li>Lens Feature:- OCR image-to-text conversion is not accurate in this release.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!--<a href="releases.html">More info</a> -->
     </div>
 
@@ -135,23 +136,45 @@
         Thank you for your valuable time to visiting MGList. <br/>&copy; 2026 MGList, All rights reserved.
     </footer>
 
-    <button id="scrollToTop" title="Go to top">&uarr;</button>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const scrollToTopButton = document.getElementById("scrollToTop");
+            // Highlight active nav link on click and on scroll
+            document.addEventListener("DOMContentLoaded", function() {
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                const sections = [
+                    {id: '', link: navLinks[0]},
+                    {id: 'about', link: navLinks[1]},
+                    {id: 'playstore', link: navLinks[2]},
+                    {id: 'thanksnotes', link: navLinks[3]},
+                    {id: 'releases', link: navLinks[4]}
+                ];
 
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                scrollToTopButton.style.display = "block";
-            } else {
-                scrollToTopButton.style.display = "none";
-            }
-        });
+                function setActive(link) {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
 
-        scrollToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        setActive(this);
+                    });
+                });
+
+                // On scroll, update active nav link
+                window.addEventListener('scroll', function() {
+                    let scrollPos = window.scrollY || window.pageYOffset;
+                    let found = false;
+                    for (let i = sections.length - 1; i >= 0; i--) {
+                        let section = sections[i].id ? document.getElementById(sections[i].id) : document.body;
+                        if (section && section.offsetTop <= scrollPos + 80) {
+                            setActive(sections[i].link);
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) setActive(navLinks[0]);
+                });
+            });
+        </script>
 </body>
 </html>
