@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="MGList (Mom's Grocery List) is here to help! We make creating and sharing your shopping list simple, fast, and digital, saving you valuable time. Inspired by a mother's care, our goal is to help you shop smarter for your health and the planet.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/mglogo3.png">
     <title>Mom Grocery List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F06567MPYS"></script>
+    <script src="assets/js/gtag.js"></script>
 </head>
 <body>
     <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="assets/img/mglogo3.png" alt="mom grocery list logo" height="40" class="me-2">
+                <img src="assets/img/mglogo3.png" alt="mom grocery list logo" height="40" class="me-2" loading="lazy">
                 <span>Mom Grocery List</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +46,7 @@
         </div>
     </header>
 
-    <div class="banner">
+    <div class="banner" data-bg="assets/img/mgbanner.jpeg">
         <div>
             <h1>Wanna prepare grocery list?</h1>
             <a href="https://play.google.com/store/apps/details?id=com.gb.momgrocerylist" target="_blank" class="btn btn-primary mt-3">Download Now</a>
@@ -177,4 +182,5 @@
             });
         </script>
 </body>
+<script src="assets/js/lazy-banner.js"></script>
 </html>
